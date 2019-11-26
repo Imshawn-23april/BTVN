@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        header,footer{
+            padding: 50px;
+            text-align: center;
+            background: orange;
+        }
+
+        aside{
+            box-sizing: border-box;
+            width: 20%;
+            background: green;
+            padding: 30px;
+            min-height: 400px;
+            float: left;
+        }
+
+        .maincontent{
+            width: 80%;
+            box-sizing: border-box;
+            background: burlywood;
+            float: right;
+            padding: 50px;
+            min-height: 400px;
+
+        }
+
+        main{
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 680px){
+            /*
+            CSS áp dụng cho màn hình nhỏ hơn 680px
+            */
+            aside{
+                width: 100%;
+                float: none;
+            }
+            .maincontent{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Phần đầu trang</h1>
+</header>
+<main>
+    <section class="maincontent">
+        <h1>Nội dung chính của trang</h1>
+    </section>
+    <aside>
+        <h1>Sidebar</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <h1>Phần chân trang</h1>
+</footer>
+
+</body>
+</html>
